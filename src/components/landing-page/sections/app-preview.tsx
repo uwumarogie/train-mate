@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-
+import Image from "next/image";
 export function AppPreviewSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-700 text-white">
@@ -11,7 +11,7 @@ export function AppPreviewSection() {
               Your Workout Journey, Visualized
             </h2>
             <p className="text-gray-300 md:text-lg">
-              Train Mate's intuitive dashboard gives you a complete overview of
+              Train Mate intuitive dashboard gives you a complete overview of
               your training progress, upcoming workouts, and achievements.
             </p>
             <ul className="space-y-3">
@@ -31,10 +31,12 @@ export function AppPreviewSection() {
           </div>
           <div className="relative mx-auto max-w-[500px]">
             <div className="overflow-hidden rounded-xl border border-gray-600 bg-gray-800 shadow-2xl">
-              <img
+              <Image
                 src="/placeholder.svg?height=600&width=500"
                 alt="Train Mate App Interface"
                 className="w-full object-cover"
+                width={500}
+                height={600}
               />
             </div>
           </div>
@@ -43,4 +45,3 @@ export function AppPreviewSection() {
     </section>
   );
 }
-
