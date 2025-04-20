@@ -21,7 +21,7 @@ import Image from "next/image";
 export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, ] = useState(false);
+  const [loading] = useState(false);
   const [, setRememberMe] = useState(false);
 
   return (
