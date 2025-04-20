@@ -16,7 +16,6 @@ import { Loader2, X } from "lucide-react";
 import { signUp } from "@/auth/auth-client";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
-import { auth } from "@/auth";
 
 export function SignUp() {
   const [firstName, setFirstName] = useState("");

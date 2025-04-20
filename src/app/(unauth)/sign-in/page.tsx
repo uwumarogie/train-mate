@@ -22,7 +22,7 @@ export default function Page() {
         },
       },
     });
-  }, []);
+  }, [router]);
 
   return (
     <div className="w-full">

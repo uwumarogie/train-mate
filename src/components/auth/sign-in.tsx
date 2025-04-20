@@ -21,8 +21,8 @@ import Image from "next/image";
 export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [rememberMe, setRememberMe] = useState(false);
+  const [loading, ] = useState(false);
+  const [, setRememberMe] = useState(false);
 
   return (
     <Card className="max-w-md rounded-none">
