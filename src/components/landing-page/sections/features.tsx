@@ -10,8 +10,8 @@ export function FeaturesSection() {
             Features Built For Serious Lifters
           </h2>
           <p className="mx-auto max-w-[700px] text-gray-500 md:text-lg">
-            Train Mate provides all the tools you need to optimize your
-            training and track your progress.
+            Train Mate provides all the tools you need to optimize your training
+            and track your progress.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
@@ -21,8 +21,8 @@ export function FeaturesSection() {
             </div>
             <h3 className="text-xl font-bold">Split Scheduler</h3>
             <p className="mt-2 text-gray-500">
-              Create custom workout splits or choose from proven templates.
-              Plan your entire week with ease.
+              Create custom workout splits or choose from proven templates. Plan
+              your entire week with ease.
             </p>
           </div>
           <div className="rounded-xl border bg-white p-6 shadow-sm">
