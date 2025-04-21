@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { signIn } from "@/auth/auth-client";
@@ -22,7 +21,6 @@ export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading] = useState(false);
-  const [, setRememberMe] = useState(false);
 
   return (
     <Card className="max-w-md rounded-none">
@@ -65,15 +63,6 @@ export function SignIn() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox
-              id="remember"
-              onClick={() => {
-                setRememberMe((prev) => !prev);
-              }}
-            />
-            <Label htmlFor="remember">Remember me</Label>
           </div>
 
           <Button
