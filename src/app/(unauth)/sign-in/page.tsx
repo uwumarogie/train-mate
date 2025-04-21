@@ -3,32 +3,15 @@
 import { SignIn } from "@/components/auth/sign-in";
 import { SignUp } from "@/components/auth/sign-up";
 import { Tabs } from "@/components/ui/tabs";
-import { authClient, useSession } from "@/auth/auth-client";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
-import { toast } from "sonner";
+import { useSession } from "@/auth/auth-client";
 import { redirect } from "next/navigation";
 export default function Page() {
-  const router = useRouter();
-
   const session = useSession();
-  if (session.data?.user !== null) {
+
+  if (session.data !== null) {
+    console.log("session.data?.user !== null");
     redirect("/dashboard");
   }
-
-  useEffect(() => {
-    authClient.oneTap({
-      fetchOptions: {
-        onError: ({ error }) => {
-          toast.error(error.message || "An error occurred");
-        },
-        onSuccess: () => {
-          toast.success("Successfully signed in");
-          router.push("/dashboard");
-        },
-      },
-    });
-  }, [router]);
 
   return (
     <div className="w-full">

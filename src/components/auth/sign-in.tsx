@@ -49,7 +49,6 @@ export function SignIn() {
               value={email}
             />
           </div>
-
           <div className="grid gap-2">
             <div className="flex items-center">
               <Label htmlFor="password">Password</Label>
@@ -67,7 +66,6 @@ export function SignIn() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-
           <div className="flex items-center gap-2">
             <Checkbox
               id="remember"
