@@ -3,7 +3,7 @@ import { toast } from "sonner";
 
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "https://train-mate.netlify.app"
+    ? "https://train-with-mate.netlify.app"
     : "http://localhost:3000";
 
 export const authClient = createAuthClient({
